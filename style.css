@@ -124,11 +124,6 @@
   border-collapse: separate;
 }
 
-.plugin-table a {
-  color: #D4EFFC;
-  text-decoration: none;
-}
-
 .info-table td {
   border: #333 solid;
   padding: 5px 15px 5px 15px;
@@ -157,18 +152,6 @@ p {
 
 .imprint {
   font-size: 12px;
-}
-
-.jumbotron {
-    background: rgba(255, 255, 255, 0.15);
-}
-
-.jumbotron p {
-  color: #D4EFFC
-}
-
-.centerfy h1 {
-  color: #D4EFFC
 }
 
 body {
