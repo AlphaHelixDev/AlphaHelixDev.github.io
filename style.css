@@ -119,7 +119,6 @@
 }
 
 .plugin-table {
-  border-spacing : 50px;
   font-size: 32px;
   border-collapse: separate;
 }
@@ -152,6 +151,8 @@ p {
 
 .imprint {
   font-size: 12px;
+  text-decoration: none;
+  color : #D4EFFC;
 }
 
 body {
