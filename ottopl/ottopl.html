@@ -1,0 +1,230 @@
+<html>
+<head>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <title>AlphaHelixDev ~ Otto Programming Language</title>
+</head>
+
+<body>
+</br>
+
+<div class="jumbotron centerfy" style="background: rgba(255, 255, 255, 0.15);">
+    <h1 style="text-shadow: 1px 1px #000000;color: #D4EFFC;">Otto Programming Language</h1>
+    <p style="color: #D4EFFC;">Useless, full of bugs and meant just for fun</p>
+</div>
+
+<div class="centerfy">
+    <a href="../resources/OttoPL.zip" download>
+        <button class="spigot-download-btn"><i class="fa fa-download"></i> Download</button>
+    </a>
+    <br/>
+    <h1 style="color: #D4EFFC;">Keywords</h1>
+    </br>
+    <table id="keyword-tbl">
+        <tr>
+            <th>Keyword</th>
+            <th>Parameters</th>
+            <th>Meaning</th>
+        </tr>
+
+        <tr>
+            <td>++</td>
+            <td>&lt;comment&gt;</td>
+            <td>Marks a comment. Everything in a comment will not be executed. Attention: A comment must end with ++
+                again!
+            </td>
+        </tr>
+        <tr>
+            <td>-</td>
+            <td></td>
+            <td>Marks the end of a line. This character MUST be placed at the end of each line being executed. Comments
+                do not need this!
+            </td>
+        </tr>
+        <tr>
+            <td>_</td>
+            <td>&lt;variable&gt;</td>
+            <td>Marks the following text up to the next space as a variable</td>
+        </tr>
+        <tr>
+            <td>$$</td>
+            <td>&lt;key&gt;</td>
+            <td>Marks the following text up to the next space as a key that stores the index of the next line.</td>
+        </tr>
+        <tr>
+            <td/>
+            <td/>
+            <td/>
+        </tr>
+        <tr>
+            <td>Otto</td>
+            <td>&lt;variable&gt; &lt;value&gt;</td>
+            <td>Creates a text variable that can be used to store text values</td>
+        </tr>
+        <tr>
+            <td>Uni</td>
+            <td>&lt;variable&gt; &lt;value&gt;</td>
+            <td>Creates a boolean variable that can be used to store boolean values</td>
+        </tr>
+        <tr>
+            <td>Guericke</td>
+            <td>&lt;variable&gt; &lt;value&gt;</td>
+            <td>Creates a numeric variable that can be used to store numeric values</td>
+        </tr>
+        <tr>
+            <td/>
+            <td/>
+            <td/>
+        </tr>
+        <tr>
+            <td>Uni von</td>
+            <td>&lt;a&gt; &lt;b&gt;</td>
+            <td>Returns the sum of the numbers a & b. (a + b)</td>
+        </tr>
+        <tr>
+            <td>von Uni</td>
+            <td>&lt;a&gt; &lt;b&gt;</td>
+            <td>Returns the difference from the numbers a & b. (a - b)</td>
+        </tr>
+        <tr>
+            <td>Otto von</td>
+            <td>&lt;a&gt; &lt;b&gt;</td>
+            <td>Returns the product of the numbers a & b. (a * b)</td>
+        </tr>
+        <tr>
+            <td>von Otto</td>
+            <td>&lt;a&gt; &lt;b&gt;</td>
+            <td>Returns the quotient of the numbers a & b. (a / b)</td>
+        </tr>
+        <tr>
+            <td>Uni Magdeburg</td>
+            <td>&lt;a&gt; &lt;b&gt;</td>
+            <td>Returns the rest of a / b. (a % b)</td>
+        </tr>
+        <tr>
+            <td/>
+            <td/>
+            <td/>
+        </tr>
+        <tr>
+            <td>Guericke von</td>
+            <td>&lt;a&gt; &lt;b&gt;</td>
+            <td>Returns true if a > b otherwise false</td>
+        </tr>
+        <tr>
+            <td>von Guericke</td>
+            <td>&lt;a&gt; &lt;b&gt;</td>
+            <td>Returns true if a < b otherwise false</td>
+        </tr>
+        <tr>
+            <td>von Magdeburg</td>
+            <td>&lt;a&gt;</td>
+            <td>Returns true if a is an odd number, otherwise false</td>
+        </tr>
+        <tr>
+            <td>Magdeburg von</td>
+            <td>&lt;a&gt;</td>
+            <td>Returns true if a is an even number, otherwise false</td>
+        </tr>
+        <tr>
+            <td>Magdeburg Guericke</td>
+            <td>&lt;a&gt; &lt;b&gt;</td>
+            <td>Returns true if a == b otherwise false</td>
+        </tr>
+        <tr>
+            <td>Guericke Magdeburg</td>
+            <td>&lt;a&gt; &lt;b&gt;</td>
+            <td>Returns true if a != b otherwise false</td>
+        </tr>
+        <tr>
+            <td>Otto Uni</td>
+            <td>&lt;a&gt; &lt;b&gt;</td>
+            <td>Returns true if a <= b otherwise false</td>
+        </tr>
+        <tr>
+            <td>Uni Otto</td>
+            <td>&lt;a&gt; &lt;b&gt;</td>
+            <td>Returns true if a >= b otherwise false</td>
+        </tr>
+        <tr>
+            <td/>
+            <td/>
+            <td/>
+        </tr>
+        <tr>
+            <td>Otto Guericke</td>
+            <td>&lt;text&gt;</td>
+            <td>Prints out the given text into the console</td>
+        </tr>
+        <tr>
+            <td>Guericke Otto</td>
+            <td>&lt;variable&gt;</td>
+            <td>Retuns the value of the given variable</td>
+        </tr>
+        <tr>
+            <td/>
+            <td/>
+            <td/>
+        </tr>
+        <tr>
+            <td>Magdeburg Uni</td>
+            <td>&lt;condition&gt; &lt;key&gt;</td>
+            <td>Jumps to the key, if the condition is fulfilled, otherwise this line is ignored.</td>
+        </tr>
+        <tr>
+            <td>Otto von Guericke Uni Magdeburg</td>
+            <td>&lt;condition&gt;</td>
+            <td>Exits the program if the condition is fulfilled, otherwise this line is ignored.</td>
+        </tr>
+    </table>
+    <br/>
+
+    <h1 style="color: #D4EFFC;">Examples</h1>
+    <h4 style="color: #D4EFFC;">It doesn't matter if you set one or more tabs at the beginning of the line, because they
+        will be removed anyway.</h4>
+    </br>
+    <div class="code-box">
+        <h3 style="color: #D4EFFC;">Print out Hello, World</h3>
+        <div class="code-box inner">
+            Otto Guericke Guericke Otto Hallo, Welt!-
+        </div>
+        </br>
+
+        <h3 style="color: #D4EFFC;">Print out n fibonacci numbers</h3>
+        <div class="code-box inner">
+
+            Otto _folge 0.0 , 1.0 , 1.0-</br>
+            Guericke _n 10-</br>
+            Guericke _fib 1-</br>
+            Guericke _prevFib 1-</br>
+            Guericke _i 2-</br>
+
+            $$loop-</br>
+            &emsp;Uni _b von Guericke _i _n-</br>
+            &emsp;&emsp;Guericke _temp _fib-</br>
+            &emsp;&emsp;Guericke _fib Uni von _fib _prevFib-</br>
+            &emsp;&emsp;Guericke _prevFib _temp-</br>
+            &emsp;&emsp;Guericke _i Uni von _i 1-</br>
+            &emsp;&emsp;Otto _folge _folge , _fib-</br>
+            &emsp;Magdeburg Uni _b $$loop-</br>
+
+            Otto Guericke Guericke Otto _folge-</br>
+        </div>
+        </br>
+    </div>
+</div>
+</body>
+
+<div class="imprint" w3-include-html="../imprint.html"></div>
+
+<script>
+    w3.includeHTML();
+</script>
+
+</html>

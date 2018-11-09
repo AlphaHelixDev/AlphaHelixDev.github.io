@@ -1,160 +1,87 @@
-.menu-container {
-  color            : #ffffff;
-  overflow         : auto;
-  background-color : #333;
-  text-decoration  : none;
-  font-family      : Arial,
-                     serif;
-}
-
-.menu-container a {
-  float      : left;
-  padding    : 14px 16px;
-  color      : #fff;
-  text-align : center;
-  font-size  : 18px;
-}
-
-.menu-container a::after {
-  float      : left;
-  padding    : 14px 16px;
-  color      : #fff;
-  text-align : center;
-  font-size  : 18px;
-}
-
-.drop-down {
-  float    : left;
-  overflow : hidden;
-}
-
-.drop-down .drop-btn {
-  padding          : 14px 16px;
-  color            : white;
-  border           : none;
-  background-color : inherit;
-  outline          : none;
-  font-size        : 18px;
-}
-
-.drop-down:hover .drop-btn,
-.menu-container a:hover {
-  color            : white;
-  background-color : #5f9ea0;
-  text-decoration  : none;
-}
-
-.drop-btn.active {
-  background-color : #008b8b;
-}
-
-.drop-down-content {
-  z-index          : 1;
-  display          : none;
-  position         : absolute;
-  min-width        : 160px;
-  background-color : #f9f9f9;
-  box-shadow       : 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-.drop-down-content a {
-  display         : block;
-  float           : none;
-  padding         : 12px 16px;
-  color           : black;
-  text-align      : left;
-  text-decoration : none;
-}
-
-.drop-down-content a:hover {
-  background-color : #ddd;
-}
-
-.drop-down:hover .drop-down-content {
-  display : block;
-}
-
-.spigot-btn {
-  width            : 300px;
-  height           : 100px;
-  padding          : 10px;
-  color            : #D4EFFC;
-  border           : none;
-  border-radius    : 5px;
-  background-color : #3E464A;
-  box-shadow       : 2px 2px #333A3D;
-  text-align       : center;
-  font-size        : 32px;
-}
 
 .centerfy {
-  text-align : center;
-}
-
-.spigot-btn:hover {
-  display          : inline-block;
-  position         : relative;
-  background-color : #5f9ea0;
-  box-shadow       : 4px 4px #285456;
-  transition       : .5s;
-  cursor           : pointer;
-}
-
-.spigot-btn:hover:after {
-  color      : #D4EFFC;
-  box-shadow : 2px 2px #333A3D;
-  transition : .5s;
+    text-align: center;
 }
 
 .active {
-  background-color : #008b8b;
-}
-
-.drop-down-content .active {
-  background-color : #77C6C9;
+    background-color: #008b8b;
 }
 
 .info {
-  font-size : 32px;
+    font-size: 32px;
 }
 
 .plugin-table {
-  font-size: 32px;
-  border-collapse: separate;
-}
-
-.info-table td {
-  border: #333 solid;
-  padding: 5px 15px 5px 15px;
-  width: 300px;
-  height: 75px;
-  text-align: center;
+    font-size: 32px;
+    border-collapse: separate;
 }
 
 .spigot-download-btn {
-  background-color: #333;
-  color: #ffffff;
-  width: 1105px;
-  height: 100px;
-  font-size: 32px;
-}
-
-.code-box {
-  background: #ffffff;
-  width: 750px;
-  margin: auto;
-}
-
-p {
-  font-size: 32px;
+    background: #333 url("background.jpg");
+    color: #D4EFFC;
+    font-size: 32px;
+    border: #333;
 }
 
 .imprint {
-  font-size: 12px;
-  text-decoration: none;
-  color : #D4EFFC;
+    font-size: 12px;
+    text-decoration: none !important;
+    color: #D4EFFC;
+}
+
+.imprint a:hover {
+    text-decoration: none !important;
+    cursor: pointer;
+}
+
+.modal-header, .modal-body, .modal-footer {
+    background-image: url("background.jpg") !important;
+}
+
+.code-box {
+    border: 1px solid #D4EFFC;
+    border-collapse: collapse;
+    color: #D4EFFC;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.code-box .inner {
+    padding-left: 5%;
+    text-align: left;
+}
+
+#keyword-tbl {
+    border: 1px solid #D4EFFC;
+    border-collapse: collapse;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#keyword-tbl td, #keyword-tbl th {
+    padding: 8px;
+    color: #D4EFFC;
+}
+
+#keyword-tbl tr:nth-child(even) {
+    background-color: #333;
+}
+
+#keyword-tbl th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background: #333 url("background.jpg");
+}
+
+p {
+    font-size: 32px;
 }
 
 body {
-  background-image: url("background.jpg");
+    background-image: url("background.jpg") !important;
+    cursor: default;
 }
